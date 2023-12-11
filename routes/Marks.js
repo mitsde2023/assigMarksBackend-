@@ -313,8 +313,8 @@ const StudentSubjectMarksData = async (data, res) => {
             try {
                 const response = await axios.get(`https://mitsde-api.edmingle.com/nuSource/api/v1/reports/classprogress?page=1&per_page=3000&class_id=${class_id}`, {
                     headers: {
-                        // 'ORGID': 4,
-                        // 'apiKey': '34c376e9a999a96f29b86989d9f4513e',
+                        'ORGID': 4,
+                        'apiKey': '34c376e9a999a96f29b86989d9f4513e',
                     },
                 });
 
