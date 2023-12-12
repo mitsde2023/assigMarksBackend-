@@ -5,9 +5,9 @@ const { Sequelize } = require('sequelize');
 //   dialect: 'mysql', 
 // });
 
-const sequelize = new Sequelize('AssigMarks', 'dbmasteruser', 'WuRd#t[Q[Q807yyh[c:f3[Hh)6{u?V-b',
+const sequelize = new Sequelize('assignment_marks', 'dbmasteruser', '%hy3])k$<${G:rY0[k:]>QcOZ;JUvK-C',
     {
-        host: 'ls-5a08001694d3b562476cc3ff204a6d8b4ad971f9.caavigzlesxe.ap-south-1.rds.amazonaws.com',
+        host: 'ls-9ebc19b44f881f32b698f79e8b61368e3f5686a9.cxw76sd6irpv.ap-south-1.rds.amazonaws.com',
         dialect: 'mysql',
     });
 
