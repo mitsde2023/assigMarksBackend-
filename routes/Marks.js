@@ -250,7 +250,10 @@ const StudentSubjectMarksDataEveryDay = async (data, res) => {
                 }
                 console.log('Subject Marks Data processed successfully for class_id:', class_id);
             } catch (error) {
-                console.error(`Error processing class_id ${class_id}:`, error);
+                await Log.create({
+                    message: `Error processing class_id ${class_id}: ${error.message}`,
+                    level: 'update-error',
+                });
                 await delay(30.5 * 60 * 1000);
             }
         }
