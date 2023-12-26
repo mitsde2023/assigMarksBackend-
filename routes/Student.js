@@ -67,7 +67,7 @@ const StudentSubjectData = async (data) => {
         const response = await axios.get(`https://mitsde-api.edmingle.com/nuSource/api/v1/masterbatch/classstudents?class_id=${class_id}&master_batch_id=${master_batch_id}&page=1&per_page=3000`, {
           headers: {
             'orgid': 3,
-            'apikey': '49137bd489d3e3c7116ead9518ab093e',
+            'apikey': 'c289e35991bdf067370b8db627e6dc80',
           },
         });
 
@@ -152,7 +152,7 @@ async function saveSubjDataToDatabase() {
     const response = await axios.get(`https://mitsde.edmingle.com/nuSource/api/v1/short/masterbatch?status=0&batch_period=5&page=1&per_page=3000&search=&organization_id=4`, {
       headers: {
         'orgid': 3,
-        'apikey': '49137bd489d3e3c7116ead9518ab093e',
+        'apikey': 'c289e35991bdf067370b8db627e6dc80',
       },
     });
     const apiResponse = response.data
@@ -275,7 +275,7 @@ router.post('/save_All_Students', async (req, res) => {
     const response = await axios.get(`https://mitsde-api.edmingle.com/nuSource/api/v1/organization/students?organization_id=2&search=&is_archived=0&page=1&per_page=50000`, {
       headers: {
         'orgid': 3,
-        'apikey': '49137bd489d3e3c7116ead9518ab093e',
+        'apikey': 'c289e35991bdf067370b8db627e6dc80',
       },
     });
     const studentsData = response.data.students;
