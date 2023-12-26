@@ -95,7 +95,7 @@ const StudentOneSubjectMarksData = async (subject_id, subject_name) => {
         const response = await axios.get(`https://mitsde-api.edmingle.com/nuSource/api/v1/reports/classprogress?page=1&per_page=3000&class_id=${class_id}`, {
             headers: {
                 'ORGID': 3,
-                'apiKey': '49137bd489d3e3c7116ead9518ab093e',
+                'apiKey': 'c289e35991bdf067370b8db627e6dc80',
             },
         });
         const classReport = response.data.class_report;
@@ -175,8 +175,8 @@ const StudentSubjectMarksDataEveryDay = async (data, res) => {
             try {
                 const response = await axios.get(`https://mitsde-api.edmingle.com/nuSource/api/v1/reports/classprogress?page=1&per_page=3000&class_id=${class_id}`, {
                     headers: {
-                        'ORGID': 4,
-                        'apiKey': '34c376e9a999a96f29b86989d9f4513e',
+                        'ORGID': 3,
+                        'apiKey': 'c289e35991bdf067370b8db627e6dc80',
                     },
                 });
 
@@ -316,8 +316,8 @@ const StudentSubjectMarksData = async (data, res) => {
             try {
                 const response = await axios.get(`https://mitsde-api.edmingle.com/nuSource/api/v1/reports/classprogress?page=1&per_page=3000&class_id=${class_id}`, {
                     headers: {
-                        'ORGID': 4,
-                        'apiKey': '34c376e9a999a96f29b86989d9f4513e',
+                        'ORGID': 3,
+                        'apiKey': 'c289e35991bdf067370b8db627e6dc80',
                     },
                 });
 
